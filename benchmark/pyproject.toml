@@ -1,0 +1,18 @@
+[project]
+name = "benchmark"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "matplotlib>=3.10.7",
+    "mcts",
+]
+
+[tool.uv.sources]
+mcts = { path = "../mcts", editable = true }
+
+[dependency-groups]
+dev = [
+    "mypy>=1.18.2",
+]
