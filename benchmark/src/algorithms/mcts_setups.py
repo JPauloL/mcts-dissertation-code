@@ -1,5 +1,4 @@
 from typing import Any, Iterable, cast
-from mcts.algorithms.ag.ag_tree_node import AgTreeNode
 from mcts.algorithms.opt import OptDefaultPolicy, OptTreeNode, OptTreePolicy
 from mcts.algorithms.uct import UctDefaultPolicy, UctTreeNode, UctTreePolicy
 from mcts import MonteCarloTreeSearch

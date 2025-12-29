@@ -9,7 +9,6 @@ type GcpSolver = Callable[[Iterable[int], list[set[int]]], tuple[list[int], int]
 class MctsAlg(Enum):
     UCT = 0
     OPT = 1
-    ALPHAGO = 2
 
 class StateRep(Enum):
     SEQ = 0
