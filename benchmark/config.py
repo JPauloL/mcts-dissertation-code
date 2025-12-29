@@ -11,12 +11,8 @@ seed = 1234
 
 # Configuration for the MCTS runs
 mcts_config: list[MctsConfig] = [
-    # MctsConfig(MctsAlg.OPT, StateRep.SEQ, 100, -1, None, None, 0, 0, 2, 1, seed),
-    # MctsConfig(MctsAlg.UCT, StateRep.SEQ, 100, -1, None, None, 0, 0, 2, 1, seed),
-    # MctsConfig(MctsAlg.ALPHAGO, StateRep.SEQ, 100, -1, None, None, 0, 0, 2, 1, seed),
     MctsConfig(MctsAlg.OPT, StateRep.DSATUR, 10, -1, None, None, 0, 0, 2, 1, seed),
-    MctsConfig(MctsAlg.UCT, StateRep.DSATUR, 10, -1, None, None, 0, 0, 2, 1, seed),
-    MctsConfig(MctsAlg.ALPHAGO, StateRep.DSATUR, 10, -1, None, None, 0, 0, 2, 1, seed)
+    MctsConfig(MctsAlg.UCT, StateRep.DSATUR, 10, -1, None, None, 0, 0, 2, 1, seed)
 ]
 
 # Exact solutions from the DIMACS instances website https://mat.tepper.cmu.edu/COLOR/instances.html
